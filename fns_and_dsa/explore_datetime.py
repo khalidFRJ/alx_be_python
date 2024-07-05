@@ -1,4 +1,3 @@
-
 import datetime
 def display_current_datetime():
     current_date = datetime.datetime.now()
@@ -14,3 +13,4 @@ def account_future_date():
 
 display_current_datetime()
 account_future_date()
+
