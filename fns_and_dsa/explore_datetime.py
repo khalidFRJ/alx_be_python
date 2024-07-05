@@ -1,16 +1,18 @@
-import datetime
+from datetime import datetime, timedelta
 def display_current_datetime():
-    current_date = datetime.datetime.now()
-    print("Current Date and Time:", current_date)
+    current_date = datetime.now()
+    formatted_date = current_date.strftime("%Y-%m-%d %H:%M:%S")
+    print("Current date and time:", formatted_date)
 
-def account_future_date():
+def calculate_future_date():
     try:
-        days = int(input("Enter a number of days to add to the current date: "))
-        future_date = datetime.datetime.now() + datetime.timedelta(days=days)
-        print("Future Date", future_date)
+        days = int(input("Enter the number of days to add to the current date: "))
+        future_date = datetime.now() + timedelta(days=days)
+        formatted_future_date = future_date.strftime("%Y-%m-%d")
+        print("Future date:", formatted_future_date)
     except ValueError:
         print("Invalid input. Please enter a valid number of days.")
 
 display_current_datetime()
-account_future_date()
+calculate_future_date()
 
