@@ -28,10 +28,8 @@ def view_list(shopping_list):
 
 def main():
     shopping_list = []  
-
     while True:
         display_menu()  
-
         try:
             choice = int(input("\nEnter your choice: "))  
         except ValueError:
