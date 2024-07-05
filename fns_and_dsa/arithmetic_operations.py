@@ -1,5 +1,6 @@
 def perform_operation(num1, num2, operation):
-    operation = operation.strip().lower()
+    operation = operation.strip().lower()  
+
     if operation == 'add':
         return num1 + num2
     elif operation == 'subtract':
@@ -13,7 +14,6 @@ def perform_operation(num1, num2, operation):
             return "Error: Division by zero"
     else:
         return "Error: Invalid operation"
-
 def main():
     print("Arithmetic Operations")
     num1 = float(input("Enter the first number: "))
@@ -26,7 +26,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
+
 
 
     
