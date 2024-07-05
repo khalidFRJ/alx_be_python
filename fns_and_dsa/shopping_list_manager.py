@@ -27,19 +27,24 @@ def view_list(shopping_list):
         print("\nThe shopping list is empty.")
 
 def main():
-    shopping_list = []
+    shopping_list = []  
 
     while True:
-        display_menu()
-        choice = input("\nEnter your choice: ")
+        display_menu()  
 
-        if choice == '1':
+        try:
+            choice = int(input("\nEnter your choice: "))  
+        except ValueError:
+            print("\nInvalid input. Please enter a number.")
+            continue
+
+        if choice == 1:
             add_item(shopping_list)
-        elif choice == '2':
+        elif choice == 2:
             remove_item(shopping_list)
-        elif choice == '3':
+        elif choice == 3:
             view_list(shopping_list)
-        elif choice == '4':
+        elif choice == 4:
             print("\nGoodbye!")
             break
         else:
