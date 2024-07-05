@@ -6,12 +6,12 @@ def display_menu():
     print("4. Exit")
 
 def add_item(shopping_list):
-    item = int(input("\nEnter the item you want to add: "))
+    item = input("\nEnter the item you want to add: ")
     shopping_list.append(item)
     print(f"'{item}' has been added to the list.")
 
 def remove_item(shopping_list):
-    item = int(input("\nEnter the item you want to remove: "))
+    item = input("\nEnter the item you want to remove: ")
     if item in shopping_list:
         shopping_list.remove(item)
         print(f"'{item}' has been removed from the list.")
@@ -31,7 +31,7 @@ def main():
 
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
 
         if choice == '1':
             add_item(shopping_list)
