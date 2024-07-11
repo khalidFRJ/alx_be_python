@@ -5,7 +5,7 @@ def safe_divide(numerator, denominator):
         result = numerator / denominator
         return result
     except ZeroDivisionError:
-        return "Error: you can not devide by zero"
+        return "Error: Cannot divide by zero."
     except ValueError:
         return "Error: Please enter numeric values ."
 
