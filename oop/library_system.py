@@ -3,25 +3,26 @@ class Book:
         self.title = title
         self.author = author 
 
-class EBook(Book):
-    def __init__(self, file_size:int):
-        self.file_size = file_size
+class EBook(Book) :
+    def __init__(self,fiel_size) :
+        self.file_size = fiel_size
+        super().__init__(title=str , author=str )
 
-
-class PrintBook (Book):
-    def __init__(self, page_count:int):
+class PrintBook(Book):
+    def __str__(self, page_count:int):
         self.page_count = page_count
 
-class library (Book) :
-    def __init__(self, books = (Book,EBook,PrintBook)):
-        self.books = books
-
+class Library(Book) :
+    def __str__(self, books ):
+        self.books = []
+    
     def add_book(self, book):
         self.book = book 
         book.append(Book or PrintBook or EBook)
+
     def list_books(self):
         print(f"{self.title} and {self.author} and {self.file_size} and {self.page_count}")
 
+
     
-from library_system import Book, EBook, PrintBook, Library
 
