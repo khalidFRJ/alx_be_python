@@ -18,8 +18,8 @@ class library(Book) :
         self.books = []
 
     def add_book(self, book):
-        self.book = book 
-        book.append(Book or PrintBook or EBook)
+        self.book = book.append(Book or PrintBook or EBook)
+        
     def list_books(self):
         print(f"{self.title} and {self.author} and {self.file_size} and {self.page_count}")
 
