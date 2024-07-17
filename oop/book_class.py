@@ -10,9 +10,15 @@ class Book:
     def __repr__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})"
 
+<<<<<<< HEAD
     
     def __del__(self):
         print(f"Deleting {self.title}")
+=======
+    def __del__(self):
+        del self.title
+        print("Deleting (title of the book)")
+>>>>>>> 46ebf376f20da74a18297c81545b4e79c73918ee
 
 my_book = Book("1984", "George Orwell", 1949)
 print(my_book.__str__())
