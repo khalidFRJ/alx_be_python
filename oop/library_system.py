@@ -14,8 +14,8 @@ class PrintBook(Book):
         self.page_count = page_count
 
 class library(Book) :
-     def __str__(self, books = [Book,EBook,PrintBook] ):
-        self.books = [Book,EBook,PrintBook] 
+     def __str__(self, books):
+        self.books = [Book,EBook,PrintBook]
 
     def add_book(self, book):
         self.book = book 
