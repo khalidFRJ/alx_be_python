@@ -6,6 +6,7 @@ class Book:
 class EBook(Book):
     def __str__(self, file_size:int):
         self.file_size = file_size
+        super().__init__(title=str , author=str )
 
 
 class PrintBook(Book):
