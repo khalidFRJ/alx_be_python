@@ -1,4 +1,4 @@
-class shape :
+class shape:
     def area(self):
         raise NotImplementedError
     
