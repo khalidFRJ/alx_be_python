@@ -37,10 +37,6 @@ class Library() :
         for book in self.books:
             print(book)
 
-from library_system import Book, EBook, PrintBook, Library
-
-
-
 def main():
 
     my_library = Library()
