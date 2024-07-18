@@ -1,7 +1,7 @@
 class Book:
     def __init__(self, title: str, author: str):
-        self.title = titlle
-        self.author = author 
+        self.title = title  # Corrected typo here
+        self.author = author
         
     def __str__(self):
         return f"Book: {self.title} by {self.author}"     
@@ -43,11 +43,9 @@ def main():
     my_library.add_book(digital_novel)
     my_library.add_book(paper_novel)
     my_library.list_books()
+
 if __name__ == "__main__":
     main()
-
-
-
 
 
 
